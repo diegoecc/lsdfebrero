@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Navegacion con tabs</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="font-awesome.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab1"><span class="fa fa-tachometer" aria-hidden="true"></span><span class="tab-text">USUARIOS POR MINUTO</span></a></li>
+		</ul>
+
+		<div class ="secciones">
+
+			<article id = "tab1">
+
+			<center><h1>Audiencia tvgo Live Perú de Lunes a Viernes - Febrero </h1></center>
+			<br>
+			<br>
+
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+		     function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+			['Fecha','Total'],
+			['01/02',6697],
+			['02/02',5553],
+			['05/02',8658],
+			['06/02',9339],
+			['07/02',9458],
+			['08/02',9310],
+			['09/02',8447],
+			['12/02',8137],
+			['13/02',6312],
+			['14/02',6425],
+			['15/02',6819],
+			['16/02',6917],
+			['19/02',9593],
+			['20/02',8676],
+			['21/02',8700],
+			['22/02',8563],
+			['23/02',8306],
+			['26/02',8565],
+			['27/02',9100],
+			['28/02',8567]
+	        ]);
+
+		        var options = {
+		          title: 'PROMEDIO DE USUARIOS POR MINUTO POR DIA - PRIMETIME (18:00 - 23:00)',
+		        };
+
+		        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div5'));
+
+		        chart.draw(data, options);
+		     	 }
+		    	</script>
+	
+		   		<div id="chart_div5" style="width: automatic; height: automatic;"></div>
+
+			<br>
+
+		    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		    <script type="text/javascript">
+		    google.charts.load('current', {'packages':['corechart']});
+		    google.charts.setOnLoadCallback(drawChart);
+
+		      function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+			['Fecha','Desktop','App','MobileWeb'],
+			['01/02',3999,2444,255],
+			['02/02',3001,2348,203],
+			['05/02',5067,3293,298],
+			['06/02',5482,3552,306],
+			['07/02',5648,3495,314],
+			['08/02',5685,3341,283],
+			['09/02',5118,3084,246],
+			['12/02',5096,2792,249],
+			['13/02',3024,3024,264],
+			['14/02',3099,3099,226],
+			['15/02',3273,3273,273],
+			['16/02',3318,3318,280],
+			['19/02',5685,3577,331],
+			['20/02',5269,3184,222],
+			['21/02',5384,3095,220],
+			['22/02',5315,3037,211],
+			['23/02',5083,3003,220],
+			['26/02',5300,3034,231],
+			['27/02',5525,3327,248],
+			['28/02',5171,3165,231]
+	        ]);
+
+		        var options = {
+		          title: 'PROMEDIO DE USUARIOS POR MINUTO POR DIA - PLATAFORMA - PRIMETIME (18:00 - 23:00)',
+		          curveType: 'function',
+		          legend: { position: 'bottom left' }
+		        };
+
+		        var chart = new google.visualization.LineChart(document.getElementById('curve_chart6'));
+
+		        chart.draw(data, options);
+			      }
+			    </script>
+		
+			    <div id="curve_chart6" style="width: automatic; height: automatic"></div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+			    <center><h1>Audiencia tvgo Live Perú de Lunes a Domingo - Enero </h1></center>
+	<br>
+	<br>
+	<br>
+	<br>	
+
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+		     function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+			['Fecha','Total'],
+			['01/02',6697],
+			['02/02',5553],
+			['03/02',1719],
+			['04/02',1871],
+			['05/02',8658],
+			['06/02',9339],
+			['07/02',9458],
+			['08/02',9310],
+			['09/02',8447],
+			['10/02',2457],
+			['11/02',2547],
+			['12/02',8137],
+			['13/02',6312],
+			['14/02',6425],
+			['15/02',6819],
+			['16/02',6917],
+			['17/02',2074],
+			['18/02',1749],
+			['19/02',9593],
+			['20/02',8676],
+			['21/02',8700],
+			['22/02',8563],
+			['23/02',8306],
+			['24/02',2986],
+			['25/02',2623],
+			['26/02',8565],
+			['27/02',9100],
+			['28/02',8567]
+	        ]);
+
+		        var options = {
+		          title: 'PROMEDIO DE USUARIOS POR MINUTO POR DIA - PRIMETIME (18:00 - 23:00)',
+		        };
+
+		        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div11'));
+
+		        chart.draw(data, options);
+		     	 }
+		    	</script>
+	
+		   		<div id="chart_div11" style="width: automatic; height: automatic;"></div>
+
+			<br>
+
+		    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		    <script type="text/javascript">
+		    google.charts.load('current', {'packages':['corechart']});
+		    google.charts.setOnLoadCallback(drawChart);
+
+		      function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+			['Fecha','Desktop','App','MobileWeb'],
+			['01/02',3999,2444,255],
+			['02/02',3001,2348,203],
+			['03/02',957,732,29],
+			['04/02',1109,722,40],
+			['05/02',5067,3293,298],
+			['06/02',5482,3552,306],
+			['07/02',5648,3495,314],
+			['08/02',5685,3341,283],
+			['09/02',5118,3084,246],
+			['10/02',1570,848,38],
+			['11/02',1730,771,46],
+			['12/02',5096,2792,249],
+			['13/02',3024,3024,264],
+			['14/02',3099,3099,226],
+			['15/02',3273,3273,273],
+			['16/02',3318,3318,280],
+			['17/02',1018,1018,38],
+			['18/02',852,852,44],
+			['19/02',5685,3577,331],
+			['20/02',5269,3184,222],
+			['21/02',5384,3095,220],
+			['22/02',5315,3037,211],
+			['23/02',5083,3003,220],
+			['24/02',1953,981,53],
+			['25/02',1749,825,49],
+			['26/02',5300,3034,231],
+			['27/02',5525,3327,248],
+			['28/02',5171,3165,231]
+	        ]);
+
+		        var options = {
+		          title: 'PROMEDIO DE USUARIOS POR MINUTO POR DIA - PLATAFORMA - PRIMETIME (18:00 - 23:00)',
+		          curveType: 'function',
+		          legend: { position: 'bottom left' }
+		        };
+
+		        var chart = new google.visualization.LineChart(document.getElementById('curve_chart12'));
+
+		        chart.draw(data, options);
+			      }
+			    </script>
+		
+			    <div id="curve_chart12" style="width: automatic; height: automatic"></div>
+
+			</article>
+				 
+		</div>
+	</div>
+	
+</body>
+</html>
+
